@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storica - Doge's Palace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="white-nav">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation Bar -->
+    <div id="overlayMenu" class="overlay-menu" tabindex="-1">
+        <span class="close-btn" id="closeMenu" role="button" aria-label="Close navigation menu" tabindex="0">&times;</span>
+        <ul>
+            <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+            <li><a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a></li>
+            <li><a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a></li>
+            <li><a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a></li>
+            <li><a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hero Section-->
+    <header>
+        <nav class="top-nav">
+            <div class="logo">Storica</div>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Open navigation menu">&#9776;</div>
+        </nav>
+        <section class="hero">
+            <img src="./assets/guide_image.png" alt="Guide to Venice" class="hero-image">
+            <div class="hero-text">
+                <h1>Your Guide to the Buildings of Venice</h1>
+            </div>
+        </div>
+        <!-- <div class="dots-container"> -->
+            <div class="dot" id="dot1" data-name="Ca' d'Oro"></div>
+            <div class="dot" id="dot2" data-name="Marciana Library"></div>
+            <div class="dot" id="dot3" data-name="Doge's Palace"></div>
+            <div class="dot" id="dot4" data-name="Saint Mark's Basilica"></div>
+        <!-- </div> -->
+        </section>
+    </header>
+
+    <main>
+        <!-- Buildings Cards-->
+        <section class="buildings-section">
+            <h2>Which building will you explore first?</h2>
+            <div class="cards-container">
+                <div class="building-card">
+                    <a href="doges-palace.html">
+                        <img src="./assets/dogePalace/Doge_s Palce Side.jpg" alt="Doge's Palace">
+                    </a>
+                    <h3>Doge's Palace</h3>
+                    <p>Renowned Gothic architectural masterpiece in the heart of Venice</p>
+                </div>
+                
+                <div class="building-card">
+                    <a href="ca-doro-palace.html">
+                        <img src="./assets/cadoro/CadoroPalaceVeniceMar.png" alt="Ca' d'Oro">
+                    </a>
+                    <h3>Ca' d'Oro</h3>
+                    <p>Beautiful palace on the Grand Canal</p>
+                </div>
+
+                <div class="building-card">
+                    <a href="marciana-library.html">
+                        <img src="./assets/library/pexels-axp-photography-500641970-18781094.jpg" alt="Marciana Library">
+                    </a>
+                    <h3>Marciana Library</h3>
+                    <p>Historic library housing rare manuscripts and classical texts</p>
+                </div>
+
+                <div class="building-card">
+                    <a href="st-marks-basilica.html">
+                        <img src="./assets/basilica/cristiano-sala-zZEgnO9Eilg-unsplash.jpg" alt="Saint Mark's Basilica">
+                    </a>
+                    <h3>Saint Mark's Basilica</h3>
+                    <p>Stunning cathedral known for its architecture and ornate mosaics</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-left">
+            <h2>Storica</h2>
+            <p>Your personal tour guide to the stories of Venice.</p>
+        </div>
+        <div class="social-media">
+            <h3>tag us on</h3>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./assets/tags/Twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="./assets/tags/Instagram.png" alt="Instagram">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="./assets/tags/Facebook.png" alt="Facebook">
+            </a>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html" aria-label="Go to Home page">Home</a>
+            <a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a>
+            <a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a>
+            <a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a>
+            <a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a>
+        </nav>
+    </footer>
+
+    <!-- Modal for Zoom -->
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top" aria-label="Scroll back to top" tabindex="0">↑</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

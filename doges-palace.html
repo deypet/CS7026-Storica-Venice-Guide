@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storica - Doge's Palace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation Bar -->
+    <div id="overlayMenu" class="overlay-menu" tabindex="-1">
+        <span class="close-btn" id="closeMenu" role="button" aria-label="Close navigation menu" tabindex="0">&times;</span>
+        <ul>
+            <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+            <li><a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a></li>
+            <li><a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a></li>
+            <li><a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a></li>
+            <li><a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a></li>
+        </ul>
+    </div>
+
+    <nav class="top-nav">
+        <div class="logo">Storica</div>
+        <div class="hamburger" id="hamburger" role="button" aria-label="Open navigation menu">&#9776;</div>
+    </nav>
+    
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="intro-content">
+                <h1>Doge's Palace</h1>
+                <p>Palazzo Ducale</p>
+                <button class="audio-button" id="playAudioBtn" aria-label="Play audio guide for Doge's Palace">
+                    ▶ Listen to guide
+                </button>
+                            <!-- Audio Element Hidden by Default, Shown When Button is Clicked -->
+                        <audio id="audioPlayer" controls>
+                            <source src="assets/audio/doges_palace_guide.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                <div class="decor-circle circle4"></div>
+                <div class="decor-circle circle5"></div>
+                <div class="decor-circle circle6"></div>
+            </div>
+            <div class="intro-image">
+                <img src="./assets/dogePalace/Doge_s Palce Side.jpg" alt="Doge's Palace">
+                <div class="decor-circle circle1"></div>
+                <div class="decor-circle circle2"></div>
+                <div class="decor-circle circle3"></div>
+            </div>
+        </section>
+
+        <!-- Building Story -->
+        <section class="story">
+            <div class="story-image">
+                <img src="./assets/dogePalace/court-of-the-doges-palace-venice-a5c250-1024.jpg" alt="Painting depicting the Court of the Doge's Palace in Venice, showcasing its grand architecture and historic significance" class="zoomable-image">
+            </div>
+            <div class="story-content">
+                <h2>A Fortress of Political Might</h2>
+                <p>
+                    The Doge’s Palace (Palazzo Ducale) is the embodiment of Venice’s power, both political and economic.
+                    Its stunning architecture reflects the wealth and influence the Venetian Republic once commanded across the Mediterranean.
+                </p>
+                <p>
+                    For centuries, it was the seat of the Doge, the elected ruler of Venice, and the home of the Venetian government.
+                    The Doge, who was chosen by an intricate electoral system, held immense power, but was also constrained by the many councils that governed the Republic.
+                </p>
+                <p>
+                    It also housed the council chambers, the court of justice, and even the prisons for those who opposed the Republic.
+                    These prisons were located in the lower floors of the palace. The courtrooms and councils were where critical decisions affecting the Republic’s future were made, including matters of diplomacy, war, and governance.
+                </p>
+                
+            </div>
+        </section>
+
+        <!-- Fact Cards Section -->
+        <section id="facts">
+            <div class="fact-container">
+                <div class="fact-card">
+                    <div class="fact-text">
+                        <h2>Marino Faliero (1355)</h2>
+                        <p>The only Doge executed for treason—his portrait was erased from the palace’s gallery in shame.</p>
+                    </div>
+                    <div class="fact-image">
+                        <img src="./assets/dogePalace/Marino_Faliero.jpg" alt="Portrait of the Venetian Doge Marino Faliero by Francisco Pradilla y Ortiz" class="zoomable-image">
+                    </div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-text">
+                        <h2>Francesco Foscari (1457)</h2>
+                        <p>Forced to resign after his son was accused of treason. His downfall happened within the very walls of the palace.</p>
+                    </div>
+                    <div class="fact-image">
+                        <img src="./assets/dogePalace/1024px-Antonio_Gambello,_Francesco_Foscari,_c._1374-1457,_Doge_of_Venice_1423_(obverse),_probably_c._1457,_NGA_44558.png" alt="Coin with the likeness of the Venetian Doge Francesco Foscari by Antonio Gambello" class="zoomable-image">
+                    </div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-text">
+                        <h2>Enrico Dandolo (1192-1205)</h2>
+                        <p>The blind but ruthless Doge who orchestrated the sack of Constantinople during the Fourth Crusade. His bold strategies expanded Venice’s influence but left a legacy of destruction.</p>
+                    </div>
+                    <div class="fact-image">
+                        <img src="./assets/dogePalace/enricodandolo-f0181a-640.jpg" alt="Portrait engraving of Enrico Dandolo" class="zoomable-image">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="fact-btn-wrapper left">
+                <button class="fact-btn left" aria-label="View previous fact">&#10094;</button>
+            </div>
+            <div class="fact-btn-wrapper right">
+                <button class="fact-btn right" aria-label="View next fact">&#10095;</button>
+            </div>
+            <div class="swipe-indicator"><p>← Swipe →</p></div>
+        </section>
+        
+        <!-- Interesting Figures or Stories -->
+        <section class="characters">
+            <div class="characters-image">
+                <img src="./assets/dogePalace/sunrise-4295681_1920.jpg" alt="Photo of Doge's Palace at surise" class="zoomable-image">
+            </div>
+            <div class="characters-content">
+                <h2>Prisoners & Myths</h2>
+                <h3>Casanova's Great Escape (1756)</h3>
+                <p>
+                    The legendary seducer Giacomo Casanova was imprisoned in the attic-like Piombi prison, but he escaped by digging through the floor with a metal spike!
+                </p>
+                <h3>The Bridge of Sighs</h3>
+                <p>
+                    Prisoners took their last look at Venice through its windows before their fate was sealed. Some say you can still hear their sighs if you listen carefully at dusk.
+                    The bridge’s name is said to come from the mournful sighs of the prisoners as they crossed it on their way to the prison, knowing they will never leave.
+                </p>
+                <h3>The Ghosts of the Doge's Palace</h3>
+                <p>
+                    Some believe that the Doge’s Palace is haunted by the spirits of prisoners who never made it out.
+                    Many claim to have seen ghostly figures wandering the halls of the palace at night, especially in the dark corners where the dungeons and cells were once located.
+                </p>
+            </div>
+        </section>
+
+        <!-- Floor Info -->
+        <section class="info-section">
+            <div class="info-image">
+                <img src="./assets/dogePalace/Sculpted Pillar.jpg" alt="Close up of a sculpted pillar at Doge's palace showing the detailed work">
+            </div>
+            <div class="info-text">
+                <h2>Architectural Marvels & Floor Guide</h2>
+                <h3>Must see architecture</h3>
+                <p><strong>The Scala d’Oro </strong> (Golden Staircase) is an extravagant grand entrance reserved for the most powerful visitors.
+                    It is an impressive example of Venetian Renaissance craftsmanship!
+                </p>
+                <p><strong>A Floating Masterpiece,</strong> the Doge’s Palace sits on wooden piles submerged in the lagoon – these foundations have kept the palace stable for over 500 years!
+                    They can be seen from the exterior near the palace's waterfront facade.
+                </p>
+                <p><strong>Secret Passages and Hidden Doors </strong> allowed rulers to spy on their subjects and move around unseen.
+                    These secret routes can be explored as part of the museum tour
+                </p>
+                <p><strong>The Courtyard</strong> features a grand staircase leading inside, with its ornate columns and open-air design, it offers visitors a stunning first impression.
+                </p>
+                <p><strong>The State Rooms</strong> are gigantic halls with massive golden ceilings, including the Chamber of the Great Council, which  once the largest room in Europe!
+                </p>
+                <p><strong>The Piombi </strong> prison is located on the upper floors of the palace.
+                    It is accessible via the Bridge of Sighs, offering a glimpse into the harsh conditions faced by prisoners during the Republic's rule.
+                </p>
+                <h3>Accssibility Informtation</h3>
+                <p>The palace has ramps, lifts, and accessible restrooms. However, the old prison areas may be difficult to access for wheelchairs.</p>
+            </div>
+        </section>
+
+        <!-- Food Suggestions -->
+        <section class="food-section">
+            <h2>What to Eat Nearby?</h2>
+            <div class="food-cards">
+        
+                <a href="https://maps.app.goo.gl/rMPvpp56PZ444HTn6" target="_blank" class="card" 
+                    aria-label="Open Google Maps location for La Piazza restaurant">
+                    <img src="./assets/restaurants/lapiazza.png" alt="Photo of restaurant La Piazza"/>
+                    <h4>La Piazza</h4>
+                </a>
+            
+                <a href="https://maps.app.goo.gl/vfdXSCTMmZUVwSJz7" target="_blank" class="card"
+                aria-label="Open Google Maps location for Ristorante Regina Sconta">
+                    <img src="./assets/restaurants/Risrorante.png" alt="Ristorante Regina Sconta">
+                    <h4>Ristorante Regina Sconta</h4>
+                </a>
+            
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g187870-d26363277-Reviews-Osteria_Da_Bubi-Venice_Veneto.html?m=69573" target="_blank" class="card"
+                    aria-label="Read reviews for Osteria Da Bubi on TripAdvisor">
+                    <img src="./assets/restaurants/Bubi.png" alt="Photo of restaurant Osteria Da Bubi"/>
+                    <h4>Osteria Da Bubi</h4>
+                </a>
+        
+            </div>
+        </section>
+
+        <!-- Booking -->
+        <section class="booking-section">
+            <h2>Book Your Visit</h2>
+            <p>Have questions? Contact us for tickets, reservations, and special access.</p>
+            <a href="https://www.doge-palace-tickets.com/" target="_blank" class="booking-button" aria-label="Book your visit to Doge’s Palace">
+                Book Now
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-left">
+            <h2>Storica</h2>
+            <p>Your personal tour guide to the stories of Venice.</p>
+        </div>
+        <div class="social-media">
+            <h3>tag us on</h3>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./assets/tags/Twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="./assets/tags/Instagram.png" alt="Instagram">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="./assets/tags/Facebook.png" alt="Facebook">
+            </a>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html" aria-label="Go to Home page">Home</a>
+            <a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a>
+            <a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a>
+            <a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a>
+            <a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a>
+        </nav>
+    </footer>
+
+    <!-- Modal for Zoom -->
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top" aria-label="Scroll back to top" tabindex="0">↑</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

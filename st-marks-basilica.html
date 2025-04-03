@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storica - Saint Mark's Basilica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation Bar -->
+    <div id="overlayMenu" class="overlay-menu" tabindex="-1">
+        <span class="close-btn" id="closeMenu" role="button" aria-label="Close navigation menu" tabindex="0">&times;</span>
+        <ul>
+            <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+            <li><a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a></li>
+            <li><a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a></li>
+            <li><a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a></li>
+            <li><a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a></li>
+        </ul>
+    </div>
+
+    <nav class="top-nav">
+        <div class="logo">Storica</div>
+        <div class="hamburger" id="hamburger" role="button" aria-label="Open navigation menu">&#9776;</div>
+    </nav>
+    
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="intro-content">
+                <h1>Saint Mark's Basilica</h1>
+                <p>Basilica di San Marco</p>
+                <button class="audio-button" id="playAudioBtn" aria-label="Play audio guide for Saint Mark's Basilica">
+                    ▶ Listen to guide
+                </button>
+                            <!-- Audio Element Hidden by Default, Shown When Button is Clicked -->
+                        <audio id="audioPlayer" controls>
+                            <source src="assets/audio/st_marks_basilica_guide.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                <div class="decor-circle circle4"></div>
+                <div class="decor-circle circle5"></div>
+                <div class="decor-circle circle6"></div>
+            </div>
+            <div class="intro-image">
+                <img src="./assets/basilica/cristiano-sala-zZEgnO9Eilg-unsplash.jpg" alt="St Mark's Basilica in full view at sunset">
+                <div class="decor-circle circle1"></div>
+                <div class="decor-circle circle2"></div>
+                <div class="decor-circle circle3"></div>
+            </div>
+        </section>
+
+        <!-- Building Story -->
+        <section class="story">
+            <div class="story-image">
+                <img src="./assets/basilica/Grubacs_Carlo_San_Marco_Venedig.jpeg" alt=" Painting Basilica Di San Marco by Carlo Grubacs depicting the colourful life of Venicians" class="zoomable-image">
+            </div>
+            <div class="story-content">
+                <h2>Timeless Masterpiece</h2>
+                <p>
+                    St. Mark's Basilica (Basilica di San Marco) in Venice is one of the most iconic churches in the world, known for its stunning Italo-Byzantine architecture and rich history.
+                    Originally built in 828 AD, it was meant to house the stolen relics of Saint Mark, the patron saint of Venice, which were smuggled from Alexandria by Venetian merchants.
+                    The basilica was rebuilt in its current form in 1063, reflecting Venice’s growing power and wealth.
+                </p>
+                <p>
+                    Over the centuries, it has been adorned with golden mosaics, intricate marble facades, and treasures looted from Constantinople during the Fourth Crusade (1204),
+                    including the famous four bronze horses above the entrance. Once the private chapel of the Doge, it became the city’s cathedral in 1807.
+                </p>
+            </div>
+        </section>
+
+        <!-- Fact Cards Section -->
+        <section id="facts">
+            <div class="fact-container">
+                <div class="fact-card">
+                    <div class="fact-text">
+                        <h2>Golden Basilica</h2>
+                        <p>It is often called the "Church of Gold" (Chiesa d'Oro) due to its lavish gold mosaics, which cover over 8,000 square meters of the interior.</p>
+                    </div>
+                    <div class="fact-image">
+                        <img src="./assets/basilica/pexels-toon-machiels-1654113-16458299.jpg" alt="Interior of Saint Marks Basilica, showcasing the gold covered ceilings" class="zoomable-image">
+                    </div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-text">
+                        <h2>Hidden Architectural Mix</h2>
+                        <p>While it is mainly Byzantine in style, the basilica also features Gothic, Renaissance, and Islamic influences, showcasing Venice’s history as a major trading hub between East and West.</p>
+                    </div>
+                    <div class="fact-image">
+                        <img src="./assets/basilica/clay-banks-Yf7W6mslf5w-unsplash.jpg" alt="Saint Marks Basilica rooftops" class="zoomable-image">
+                    </div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-text">
+                        <h2>Stolen Relics</h2>
+                        <p>The basilica was built to house the relics of Saint Mark, which were allegedly smuggled out of Alexandria, Egypt, in 828 AD by Venetian merchants.</p>
+                    </div>
+                    <div class="fact-image">
+                        <img src="./assets/basilica/juan-domenech-jCNPu5leq8s-unsplash.jpg" alt="A view of a sculpture of Saint Mark - the patron apostle of Venice, above the golden sculpture of the Lion of Venice, on the exterior of St. Marks Basilica in Venice, Italy." class="zoomable-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fact-btn-wrapper left">
+                <button class="fact-btn left" aria-label="View previous fact">&#10094;</button>
+            </div>
+            <div class="fact-btn-wrapper right">
+                <button class="fact-btn right" aria-label="View next fact">&#10095;</button>
+            </div>
+            <div class="swipe-indicator"><p>← Swipe →</p></div>
+        </section>
+        
+        <!-- Interesting Figures or Stories -->
+        <section class="characters">
+            <div class="characters-image">
+                <img src="./assets/basilica/napoleon-bonaparte-73543_1920.jpg" alt="Napoleon Bonaparte, the Emperor of France depicted on a horse" class="zoomable-image">
+            </div>
+            <div class="characters-content">
+                <h2>Art & War</h2>
+                <h3>Crusaders & Conquerors</h3>
+                <p>
+                    In 1204, during the Fourth Crusade, Venetian-led forces sacked Constantinople and brought back treasures, including the famous Horses of St. Mark and parts of the church’s golden decorations.
+                    Venetian merchants and military leaders played a key role in this looting, enriching the basilica.
+                </p>
+                <h3>Architects & Artists</h3>
+                <p>
+                    Over the centuries, numerous architects and craftsmen contributed to its unique mix of Byzantine, Gothic, and Renaissance styles.
+                    The lavish gold mosaics were designed by Venetian and Greek artists, and some were even later restored by Titian and Tintoretto, two of Venice’s greatest painters.
+                </p>
+                <h3>Napoleon Bonaparte</h3>
+                <p>
+                    In 1797, Napoleon invaded Venice, abolished the Venetian Republic, and looted many of its treasures, including the Golden Altar (Pala d’Oro), parts of which were later returned.
+                    In 1807, he made St. Mark’s the official cathedral of Venice, ending its status as the Doge’s private chapel.
+                </p>
+            </div>
+        </section>
+
+        <!-- Floor Info -->
+        <section class="info-section">
+            <div class="info-image">
+                <img src="./assets/basilica/james-hoey-aUZP3dy3d3w-unsplash.jpg" alt="Exterior Saint Marc Basilica rooftops bathed in warm sunlight">
+            </div>
+            <div class="info-text">
+                <h2>Architectural Marvels & Floor Guide</h2>
+                <p><strong>Ground Floor</strong> Over 8,000 sq. meters of golden mosaics adorn the walls and domes, while the Pala d’Oro dazzles with 1,900 gemstones.
+                    The marble floors feature intricate geometric and animal patterns, and the iconic bronze horses above the entrance are replicas, with the originals displayed upstairs.
+                </p>
+                <p><strong>First Floor</strong> The original bronze horses, looted from Constantinople in 1204, are preserved inside for protection.
+                    The Basilica Museum showcases ancient mosaics, tapestries, and relics, while the panoramic terrace offers stunning views of Piazza San Marco and the Venetian lagoon.
+                </p>
+                <p><strong>Second Floor</strong> Some upper areas feature private chapels and additional mosaics, though they are not always open to the public.
+                    They offer a unique, close-up view of the domes and intricate mosaics.
+                </p>
+                
+                <h3>Accessibility</h3>
+                <p> The Porta San Pietro entrance has a wheelchair ramp, though the wavy mosaic floors may be challenging.
+                    Upper levels, including the museum and terrace, are only accessible via steep stairs.
+                    Visitors with disabilities can usually skip the queue with one companion—ask staff for help.
+                    Seating is limited, so short visits are advised.
+                    No restrooms inside; the nearest accessible toilets are in Piazza San Marco (paid).</p>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section class="food-section">
+            <h2>What to Eat Nearby?</h2>
+            <div class="food-cards">
+    
+              <a href="https://maps.app.goo.gl/vfdXSCTMmZUVwSJz7" target="_blank" class="card"
+              aria-label="Open Google Maps location for Ristorante Regina Sconta">
+                <img src="./assets/restaurants/Risrorante.png" alt="Ristorante Regina Sconta">
+                <h4>Ristorante Regina Sconta</h4>
+              </a>
+    
+              <a href="https://maps.app.goo.gl/rLra2cbCj6UvY7Bp7" target="_blank" class="card"
+                aria-label="Open Google Maps location for Ristorante San Trovaso">
+                <img src="./assets/restaurants/Santrovaso.png" alt="Ristorante San Trovaso">
+                <h4>Ristorante San Trovaso</h4>
+              </a>
+    
+              <a href="https://maps.app.goo.gl/XVEdTZs625nbBNTLA" target="_blank" class="card"
+                aria-label="Open Google Maps location for Antica Osteria Ai Tre Leoni">
+                <img src="./assets/restaurants/antica-osteria-ai-tre.jpg" alt="Antica Osteria Ai Tre Leoni">
+                <h4>Antica Osteria Ai Tre Leoni</h4>
+              </a>
+    
+            </div>
+        </section>
+
+        <!-- Booking -->
+        <section class="booking-section">
+            <h2>Book Your Visit</h2>
+            <p>Have questions? Contact us for tickets, reservations, and special access.</p>
+            <a href="https://basilicasanmarco.skiperformance.com/en/store#/en/buy?skugroup_id=2524" target="_blank" class="booking-button" aria-label="Book your visit to St Mark's Basilica">
+                Book Now
+            </a>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-left">
+            <h2>Storica</h2>
+            <p>Your personal tour guide to the stories of Venice.</p>
+        </div>
+        <div class="social-media">
+            <h3>tag us on</h3>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./assets/tags/Twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="./assets/tags/Instagram.png" alt="Instagram">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="./assets/tags/Facebook.png" alt="Facebook">
+            </a>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html" aria-label="Go to Home page">Home</a>
+            <a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a>
+            <a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a>
+            <a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a>
+            <a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a>
+        </nav>
+    </footer>
+
+    <!-- Modal for Zoom -->
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top" aria-label="Scroll back to top" tabindex="0">↑</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

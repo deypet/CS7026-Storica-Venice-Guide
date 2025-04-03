@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storica - Ca' d'Oro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation Bar -->
+    <div id="overlayMenu" class="overlay-menu" tabindex="-1">
+        <span class="close-btn" id="closeMenu" role="button" aria-label="Close navigation menu" tabindex="0">&times;</span>
+        <ul>
+            <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+            <li><a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a></li>
+            <li><a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a></li>
+            <li><a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a></li>
+            <li><a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a></li>
+        </ul>
+    </div>
+
+    <nav class="top-nav">
+        <div class="logo">Storica</div>
+        <div class="hamburger" id="hamburger" role="button" aria-label="Open navigation menu">&#9776;</div>
+    </nav>
+    
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <div class="intro-content">
+                <h1>Ca' d'Oro</h1>
+                <p>Palazzo Santa Sofia</p>
+                <button class="audio-button" id="playAudioBtn" aria-label="Play audio guide for Ca' d'Oro Palace">
+                    ▶ Listen to guide
+                </button>
+                            <!-- Audio Element Hidden by Default, Shown When Button is Clicked -->
+                        <audio id="audioPlayer" controls>
+                            <source src="assets/audio/ca_doro_guide.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                <div class="decor-circle circle4"></div>
+                <div class="decor-circle circle5"></div>
+                <div class="decor-circle circle6"></div>
+            </div>
+            <div class="intro-image">
+                <img src="./assets/cadoro/CadoroPalaceVeniceMar.png" alt="Ca' d'Oro">
+                <div class="decor-circle circle1"></div>
+                <div class="decor-circle circle2"></div>
+                <div class="decor-circle circle3"></div>
+            </div>
+        </section>
+
+        <!-- Building Story -->
+        <section class="story">
+            <div class="story-image">
+                <img src="./assets/Doge_Sunrise.jpg" alt="Doge's Palace" class="zoomable-image">
+            </div>
+            <div class="story-content">
+                <h2>A Palace Adorned in Gold</h2>
+                <p>
+                    If you could travel back in time to the early 15th century, you would find Ca’ d’Oro gleaming in gold along the Grand Canal.
+                    Built between 1421 and 1437 by Marino Contarini, a wealthy Venetian noble, this palace was a statement of opulence and artistic excellence.
+                </p>
+                <p>
+                    Its name, "House of Gold", came from the gold leaf that once covered much of the exterior.
+                    Designed in the Venetian Gothic style, Ca’ d’Oro was intended to showcase the wealth and taste of the Contarini family and reflect the immense success of Venetian trade.
+                </p>
+            </div>
+        </section>
+
+        <!-- Fact Cards Section -->
+        <section id="facts">
+            <div class="fact-container">
+                <div class="fact-card">
+                    <div class="fact-text">
+                        <h2>Marino Contarini</h2>
+                        <p>The nobleman behind Ca’ d’Oro’s creation was obsessed with making his residence the finest in Venice.
+                            This is reflected in every detail of the building’s design, from the airy open courtyard to the elaborate carvings on the façade.
+                            Despite his efforts, Contarini’s financial instability meant the palace was eventually sold to the Vendramin family.
+                        </p>
+                    </div>
+                    <div class="fact-image">
+                        <img src="./assets/Doge_Sunrise.jpg" alt="Fact Image" class="zoomable-image">
+                    </div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-text">
+                        <h2>The Vendramin Family</h2>
+                        <p>For centuries, this aristocratic family occupied the palace. They were one of the wealthiest families in Venice, their wealth derived from trade and banking.</p>
+                    </div>
+                    <div class="fact-image">
+                        <img src="./assets/Doge_Sunrise.jpg" alt="Another Fact Image" class="zoomable-image">
+                    </div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-text">
+                        <h2>Baron Giorgio Franchetti (19th Century)</h2>
+                        <p>The palace’s most famous restorer, Baron Giorgio Franchetti, was an art collector who fell in love with the building and its history.
+                            He purchased Ca’ d’Oro in 1894 and personally funded its restoration, turning it into a museum to house his collection of Renaissance art.
+                            When he passed in 1922, he bequeathed the palace and his art collection to the Italian state.
+                        </p>
+                    </div>
+                    <div class="fact-image">
+                        <img src="./assets/Doge_Sunrise.jpg" alt="Another Fact Image" class="zoomable-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fact-btn-wrapper left">
+                <button class="fact-btn left" aria-label="View previous fact">&#10094;</button>
+            </div>
+            <div class="fact-btn-wrapper right">
+                <button class="fact-btn right" aria-label="View next fact">&#10095;</button>
+            </div>
+            <div class="swipe-indicator"><p>← Swipe →</p></div>
+        </section>
+        
+        <!-- Interesting Figures or Stories -->
+        <section class="characters">
+            <div class="characters-image">
+                <img src="./assets/Doge_Sunrise.jpg" alt="Characters" class="zoomable-image">
+            </div>
+            <div class="characters-content">
+                <h2>Myths, Legends & Curses</h2>
+                <p>
+                    There are whispers among Venetians that Ca’ d’Oro carries a curse. It is said that a noblewoman once cursed the palace after a betrayal, vowing that anyone who tried to change it would face misfortune.
+                </p>
+                <p>
+                    The palace’s various restorations were often marked by mysterious accidents, and some believe this curse was the cause.
+                </p>
+                <p>
+                    For example, Baron Franchetti’s sudden death right after completing the renovations added fuel to these legends. Whether or not the palace is truly cursed, there is an undeniable air of mystery around it.
+                </p>
+            </div>
+        </section>
+
+        <!-- Floor Info -->
+        <section class="info-section">
+            <div class="info-image">
+                <img src="./assets/cadoro/AreaGuide.png" alt="Descriptive Alt Text">
+            </div>
+            <div class="info-text">
+                <h2>Floor/Area Guide</h2>
+                <p><strong>Ground Floor</strong> The open-air courtyard welcomes visitors, where you can see Venetian well-heads and the loggia that once opened directly onto the Grand Canal.</p>
+                <p><strong>First Floor</strong> Home to the museum’s permanent collection of Renaissance and Gothic paintings, sculptures, and furniture. Titian, Mantegna, and Pisanello are among the artists featured.</p>
+                <p><strong>Second Floor</strong> The second floor continues the artistic journey, offering panoramic views of the Grand Canal. It hosts temporary exhibits and further examples of Venetian Renaissance art.</p>
+                <h3>Accessibility</h3>
+                <p>The palace lacks elevators, and its steep stone staircases make it difficult for those with mobility challenges to visit the upper floors. The ground floor and courtyard are accessible, but the upper galleries require climbing stairs.</p>
+            </div>
+        </section>
+
+        <!-- Food Suggestions -->
+        <section class="food-section">
+            <h2>What to Eat Nearby?</h2>
+            <div class="food-cards">
+          
+              <a href="https://maps.app.goo.gl/6FtDRu8hBcY9mL2V8" target="_blank" class="card"
+              aria-label="Open Google Maps location for Zikiya restaurant">
+                <img src="./assets/restaurants/zikiya.png" alt="Zikiya">
+                <h4>Zikiya</h4>
+              </a>
+          
+              <a href="https://maps.app.goo.gl/mDZq24dEWJDeGh28A" target="_blank" class="card"
+              aria-label="Open Google Maps location for Fluffy Brunch restaurant">
+                <img src="./assets/restaurants/fluffy.png" alt="FLUFFY BRUNCH">
+                <h4>FLUFFY BRUNCH</h4>
+              </a>
+          
+              <a href="https://maps.app.goo.gl/dY5Ex3VJx56pdK1v7" target="_blank" class="card"
+              aria-label="Open Google Maps location for Trattoria Il Vagone">
+                <img src="./assets/restaurants/trattoria.png" alt="Trattoria Il Vagone">
+                <h4>Trattoria Il Vagone</h4>
+              </a>
+          
+            </div>
+          </section>
+
+        <!-- Booking -->
+        <section class="booking-section">
+            <h2>Book Your Visit</h2>
+            <p>Have questions? Contact us for tickets, reservations, and special access.</p>
+            <a href="https://www.italy-museum.com/venice/ca-d-oro-tickets" target="_blank" class="booking-button" aria-label="Book your visit to Ca' d'Oro Palace">
+                Book Now
+            </a>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-left">
+            <h2>Storica</h2>
+            <p>Your personal tour guide to the stories of Venice.</p>
+        </div>
+        <div class="social-media">
+            <h3>tag us on</h3>
+            <a href="https://twitter.com" target="_blank">
+                <img src="./assets/tags/Twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="./assets/tags/Instagram.png" alt="Instagram">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="./assets/tags/Facebook.png" alt="Facebook">
+            </a>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html" aria-label="Go to Home page">Home</a>
+            <a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a>
+            <a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a>
+            <a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a>
+            <a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a>
+        </nav>
+    </footer>
+
+    <!-- Modal for Zoom -->
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top" aria-label="Scroll back to top" tabindex="0">↑</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
