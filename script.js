@@ -48,24 +48,18 @@ function initFactCards() {
             card.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
             card.style.opacity = index === currentIndex ? "1" : "0";
         });
+
+        prevBtn.classList.toggle("hidden", currentIndex === 0);
+        nextBtn.classList.toggle("hidden", currentIndex === cards.length - 1);
     }
 
     function handleSwipe() {
         let difference = startX - endX;
         if (Math.abs(difference) > 50) {
-            if (difference > 0) nextSlide(); 
-            else prevSlide();
+            if (difference > 0 && currentIndex < cards.length - 1) currentIndex++;
+            else if (difference < 0 && currentIndex > 0) currentIndex--;
+            updateCards();
         }
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % cards.length; // Loops back to first
-        updateCards();
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + cards.length) % cards.length; // Loops back to last
-        updateCards();
     }
 
     document.querySelector(".fact-container").addEventListener("touchstart", e => startX = e.touches[0].clientX);
@@ -74,8 +68,8 @@ function initFactCards() {
     document.querySelector(".fact-container").addEventListener("mousedown", e => startX = e.clientX);
     document.querySelector(".fact-container").addEventListener("mouseup", e => { endX = e.clientX; handleSwipe(); });
 
-    prevBtn.addEventListener("click", prevSlide);
-    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", () => { if (currentIndex > 0) { currentIndex--; updateCards(); } });
+    nextBtn.addEventListener("click", () => { if (currentIndex < cards.length - 1) { currentIndex++; updateCards(); } });
 
     updateCards();
 }
