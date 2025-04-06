@@ -339,7 +339,7 @@ p {
 
 .story-content {
     width: 50%;
-    background-color: #A28351; 
+    background-color: #906F31; 
     color: white; 
     display: flex;
     flex-direction: column;
@@ -375,7 +375,7 @@ p {
 
 .characters-content {
     width: 50%;
-    background-color: #A28351;
+    background-color: #906F31;
     color: white; 
     display: flex;
     flex-direction: column;
@@ -539,7 +539,7 @@ body.keyboard-active .fact-btn {
 
 /* Fact Button Styles */
 .fact-btn {
-    background: #A28351;;
+    background: #906F31;
     color: white;
     border: none;
     padding: 20px 30px;
@@ -682,7 +682,7 @@ body.keyboard-active .fact-btn {
 }
   
   .booking-button:hover {
-    background: #A28351;
+    background: #906F31;
     color: white;
   }
   
