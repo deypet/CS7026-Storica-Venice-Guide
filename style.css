@@ -798,145 +798,148 @@ p {
     color: white;
 }
 
-.dots-container {
-    position: absolute;
-    top: 60%; /* Adjust this value as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0 20px;
-    pointer-events: none; /* Prevents container from blocking the dots */
-}
 
-.dot {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.3s;
-    pointer-events: all; /* Ensures dots are clickable */
-}
-
-/* 圆点位置 */
-#dot1 {
-    top: 69%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-}
-
-#dot2 {
-    top: 20%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-}
-
-#dot3 {
-    top: 10%;
-    right: 10%;
-    transform: translate(-50%, -50%);
-}
-
-#dot4 {
-    bottom: 10%;
-    right: 30%;
-    transform: translate(-50%, -50%);
-}
-
-.dot:hover {
-    transform: scale(1.2);
-}
-
-.dot::after {
-    content: attr(data-name);
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 12px;
-}
-
-.dotted-line {
-    position: absolute;
-    border-top: 2px dotted white;
-    pointer-events: none;
-}
-
-.dotted-line.active {
-    animation: drawLine 1s forwards;
-}
-
-
-.hero {
-    cursor: url('./assets/foot.png'), auto;
-  }
-  
-  
-  /* 当鼠标悬停在 dot1 上时，通过 ::after 伪元素显示连接线 */
-  /* 注意：此处数值需根据实际情况手动调整 */
-  #dot1:hover::after {
-    content: "Ca' d'Oro";
-    position: absolute;
-    /* 让线条从 dot1 的中心开始，假设圆点尺寸为 40px */
-    left: 20px;
-    top: 20px;
-    width: 450px;                /* 计算出的两点中心距离 */
-    border-top: 2px dashed white; /* 虚线 */
-    transform: rotate(-48deg);    /* 计算出的旋转角度 */
-    transform-origin: 0 0;
-    z-index: 1;
-}
-
-
-  
-  /* 当鼠标悬停在 dot2 上时，通过 ::after 伪元素显示连接线 */
-  /* 注意：此处数值需根据实际情况手动调整 */
-  #dot2:hover::after {
-    content: "Marciana Library";
-    position: absolute;
-    /* 以 dot2 内部中心为起点，40px 圆点中心偏移 */
-    left: 20px;
-    top: 20px;
-    width: 850px;                /* 连接线长度 */
-    border-top: 2px dashed white; /* 虚线样式 */
-    transform: rotate(-5deg);    /* 旋转角度 */
-    transform-origin: 0 0;
-    z-index: 1;
-}
-
-
-  /* 当鼠标悬停在 dot2 上时，通过 ::after 伪元素显示连接线 */
-  /* 注意：此处数值需根据实际情况手动调整 */
-  #dot3:hover::after {
-    content: "Doge's Palace";
-    position: absolute;
-    left: 20px; /* 让虚线从 dot3 内部中心点开始 */
-    top: 20px;
-    width: 585px; /* 连接线长度（需要手动调整） */
-    border-top: 2px dashed white; /* 虚线样式 */
-    transform: rotate(120deg); /* 旋转角度（需要手动调整） */
-    transform-origin: 0 0;
-    z-index: 1;
-}
-
-  
-  /* 当鼠标悬停在 dot2 上时，通过 ::after 伪元素显示连接线 */
-  /* 注意：此处数值需根据实际情况手动调整 */
-  #dot4:hover::after {
-    content: "Saint Mark's Basilica";
-    position: absolute;
-    left: 20px; /* 让虚线从 dot3 内部中心点开始 */
-    top: 20px;
-    width: 845px; /* 连接线长度（需要手动调整） */
-    border-top: 2px dashed white; /* 虚线样式 */
-    transform: rotate(187deg); /* 旋转角度（需要手动调整） */
-    transform-origin: 0 0;
-    z-index: 1;
-}
+ /* dot */
+ #dot1 {
+     position: absolute;
+     top: 69%;
+     left: 10%;
+     transform: translate(-50%, -50%);
+     width: 40px;
+     height: 40px;
+     background-color: white;
+     border-radius: 50%;
+     opacity: 0.5;  
+     transition: transform 1s ease-in-out;  
+   }
+   
+   
+   #dot1::after {
+     content: "Ca' d'Oro";
+     position: absolute;
+     top: 15px;  
+     left: -50%;
+     transform: translateX(-50%);
+     color: white;
+     font-size: 14px;
+     opacity: 1;
+     transition: opacity 0.4s ease-in-out; 
+   }
+   
+   
+   #dot2::after {
+       content: "Marciana Library";
+       position: absolute;
+       top: 15px; 
+       left: -70%;
+       transform: translateX(-50%);
+       color: white;
+       font-size: 14px;
+       opacity: 1;
+       transition: opacity 0.4s ease-in-out;  
+     }
+   
+     #dot3::after {
+       content: "Doge's Palace";
+       position: absolute;
+       top: 15px;  
+       left: -50%;
+       transform: translateX(-50%);
+       color: white;
+       font-size: 14px;
+       opacity: 1;
+       transition: opacity 0.4s ease-in-out; 
+     }
+   
+     #dot4::after {
+       content: "Saint Mark's Basilica";
+       position: fixed;
+       top: 15px; 
+       left: -50%;
+       transform: translateX(-50%);
+       color: white;
+       font-size: 14px;
+       opacity: 1;
+       transition: opacity 0.4s ease-in-out;  
+     }
+   
+   
+   #dot2, #dot3, #dot4 {
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     background-color: white;
+     border-radius: 50%;
+   
+     opacity: 0.5;
+     transition: opacity 1s ease-in-out 1s;  
+   }
+   
+   
+   #dot2 {
+     top: 24%;
+     left: 30%;
+     transform: translate(-50%, -50%);
+   }
+   
+   #dot3 {
+     top: 2%;
+     left: 60%;
+     transform: translate(-50%, -50%);
+   }
+   
+   #dot4 {
+     top: 25%;
+     left: 71%;
+     transform: translate(-50%, -50%);
+   }
+   
+   
+   #dot1::before {
+     content: "";
+     position: absolute;
+     top: -10vh;
+     left:16vh;
+     width: 56vw;
+     height: 48vh;
+     border: 2px dashed white;
+     border-radius: 100% / 100%;
+     border-left: none;
+     border-bottom: none;
+     transform: rotate(-30deg);
+     transform-origin: bottom left;
+     opacity: 0;  
+     transition: opacity 1s ease-in 1s;  
+   }
+   
+   
+   #dot1:hover {
+     transform: translate(-50%, -50%) scale(1.2);  
+   }
+   
+   #dot1:hover::after {
+     opacity: 1; 
+   }
+   
+   #dot2:hover::after {
+       opacity: 0.5; 
+     }
+   
+   #dot1:hover + #dot2 {
+     opacity: 0.5;  
+   }
+   
+   #dot1:hover + #dot2 + #dot3 {
+     opacity: 0.5; 
+   }
+   
+   #dot1:hover + #dot2 + #dot3 + #dot4 {
+     opacity: 0.5; 
+   }
+   
+   #dot1:hover::before {
+     opacity: 1; 
+   }
 
 /*--- Buildings Section---*/
 .buildings-section{
