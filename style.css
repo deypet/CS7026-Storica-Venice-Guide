@@ -821,7 +821,7 @@ p {
     left: -40%;
     transform: translateX(-50%);
     color: white;
-    font-size: 12px;
+    font-size: 1rem;
     opacity: 1;
     transition: opacity 0.4s ease-in-out; 
   }
@@ -834,7 +834,7 @@ p {
       left: -70%;
       transform: translateX(-50%);
       color: white;
-      font-size: 12px;
+      font-size: 1rem;
       opacity: 1;
       transition: opacity 0.4s ease-in-out;  
     }
@@ -846,7 +846,7 @@ p {
       left: -30%;
       transform: translateX(-50%);
       color: white;
-      font-size: 12px;
+      font-size: 1rem;
       opacity: 1;
       transition: opacity 0.4s ease-in-out; 
     }
@@ -858,7 +858,7 @@ p {
       left: -30%;
       transform: translateX(-50%);
       color: white;
-      font-size: 12px;
+      font-size: 1rem;
       opacity: 1;
       transition: opacity 0.4s ease-in-out;  
     }
@@ -953,7 +953,7 @@ p {
   }
 
 .buildings-section p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .cards-container {
     padding-top: 3%;
