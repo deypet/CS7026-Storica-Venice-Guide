@@ -12,23 +12,11 @@
 <body class="white-nav">
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
-    <!-- Navigation Bar -->
-    <div id="overlayMenu" class="overlay-menu" tabindex="-1">
-        <span class="close-btn" id="closeMenu" role="button" aria-label="Close navigation menu" tabindex="0">&times;</span>
-        <ul>
-            <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
-            <li><a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a></li>
-            <li><a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a></li>
-            <li><a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a></li>
-            <li><a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a></li>
-        </ul>
-    </div>
-    
     <!-- Hero Section-->
     <header>
         <nav class="top-nav">
             <div class="logo">Storica</div>
-            <div class="hamburger" id="hamburger" role="button" aria-label="Open navigation menu">&#9776;</div>
+            <button class="hamburger" id="hamburger" role="button" aria-label="Open navigation menu">&#9776;</button>
         </nav>
         <section class="hero">
             <img src="./assets/guide_image.png" alt="Guide to Venice" class="hero-image">
@@ -42,6 +30,18 @@
             <div class="dot" id="dot4" data-name="Saint Mark's Basilica"></div>
         </section>
     </header>
+
+     <!-- Navigation Bar -->
+    <div id="overlayMenu" class="overlay-menu" tabindex="-1">
+        <ul>
+            <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+            <li><a href="doges-palace.html" aria-label="Learn about Doge’s Palace">Doge’s Palace</a></li>
+            <li><a href="ca-doro-palace.html" aria-label="Learn about the Ca' d'Oro Palace">Ca' d'Oro</a></li>
+            <li><a href="marciana-library.html" aria-label="Learn about the Marciana Library">Marciana Library</a></li>
+            <li><a href="st-marks-basilica.html" aria-label="Learn about St. Mark's Basilica">St Mark's Basilica</a></li>
+        </ul>
+        <button class="close-btn" id="closeMenu" role="button" aria-label="Close navigation menu" tabindex="0">&times;</button>
+    </div>
 
     <main>
         <!-- Buildings Cards-->
