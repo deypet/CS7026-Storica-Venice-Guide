@@ -144,7 +144,7 @@ p {
 
 .white-nav .hamburger,
 .white-nav .logo {
-    color: #ffffff !important; /* White colour for the index/home page */
+    color: #ffffff; /* White colour for the index/home page */
 }
 
 /* --- Back Top Button ----------------- */
