@@ -113,7 +113,7 @@ function initAudioPlayer() {
     const playButton = document.getElementById("playAudioBtn");
 
     playButton.addEventListener("click", function () {
-        audioPlayer.style.display = "block"; // Ensure the player appears below the button
+        audioPlayer.style.display = "block";
         audioPlayer.play();
     });
 }
