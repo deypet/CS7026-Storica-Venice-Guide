@@ -18,7 +18,7 @@
         <button class="hamburger" id="hamburger" aria-label="Open navigation menu">&#9776;</button>
     </nav>
     
-    <div id="overlayMenu" class="overlay-menu" tabindex="-1">
+    <nav id="overlayMenu" class="overlay-menu">
         <ul>
             <li><a href="index.html" >Home</a></li>
             <li><a href="doges-palace.html" >Doge’s Palace</a></li>
@@ -26,8 +26,8 @@
             <li><a href="marciana-library.html" >Marciana Library</a></li>
             <li><a href="st-marks-basilica.html" >St Mark's Basilica</a></li>
         </ul>
-        <button class="close-btn" id="closeMenu" role="button" aria-label="Close navigation menu" >&times;</button>
-    </div>
+        <button class="close-btn" id="closeMenu" aria-label="Close navigation menu" >&times;</button>
+    </nav>
     
      <main id="maincontent">
         <!-- Introduction Section -->
@@ -208,13 +208,13 @@
     </footer>
 
     <!-- Modal for Zoom -->
-    <div id="imageModal" class="image-modal">
+    <div id="imageModal" class="image-modal" alt="">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImg">
     </div>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" title="Back to Top" aria-label="Scroll back to top" tabindex="0">↑</button>
+    <button id="backToTop" title="Back to Top" aria-label="Scroll back to top">↑</button>
     
     <script src="script.js"></script>
 </body>
