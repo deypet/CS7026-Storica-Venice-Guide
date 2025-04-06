@@ -9,7 +9,7 @@
     top: -50px;
     left: 10px;
     background: #000;
-    color: white;
+    color: #FFFFFF;
     padding: 10px;
     z-index: 100;
 }
@@ -140,11 +140,13 @@ p {
     font-weight: 700;
     font-style: normal;
     color: #000000;
+    background-color: transparent;
 }
 
 .white-nav .hamburger,
 .white-nav .logo {
     color: #ffffff; /* White colour for the index/home page */
+    background-color: transparent;
 }
 
 /* --- Back Top Button ----------------- */
