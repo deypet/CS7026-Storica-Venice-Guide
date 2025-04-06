@@ -105,6 +105,8 @@ p {
     font-size: 30px;
     cursor: pointer;
     color: #333;
+    border-width: 0;
+    background-color: transparent;
 }
 
 /* --- Navigation Top Bar ----------------- */
@@ -127,6 +129,7 @@ p {
     color: #000000;
     display: block;
     line-height: 1;
+    background-color: transparent;
 }
 
 .logo {
