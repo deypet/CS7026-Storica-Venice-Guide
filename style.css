@@ -799,148 +799,150 @@ p {
 }
 
 
- /* dot */
- #dot1 {
-     position: absolute;
-     top: 69%;
-     left: 10%;
-     transform: translate(-50%, -50%);
-     width: 40px;
-     height: 40px;
-     background-color: white;
-     border-radius: 50%;
-     opacity: 0.5;  
-     transition: transform 1s ease-in-out;  
-   }
-   
-   
-   #dot1::after {
-     content: "Ca' d'Oro";
-     position: absolute;
-     top: 15px;  
-     left: -50%;
-     transform: translateX(-50%);
-     color: white;
-     font-size: 14px;
-     opacity: 1;
-     transition: opacity 0.4s ease-in-out; 
-   }
-   
-   
-   #dot2::after {
-       content: "Marciana Library";
-       position: absolute;
-       top: 15px; 
-       left: -70%;
-       transform: translateX(-50%);
-       color: white;
-       font-size: 14px;
-       opacity: 1;
-       transition: opacity 0.4s ease-in-out;  
-     }
-   
-     #dot3::after {
-       content: "Doge's Palace";
-       position: absolute;
-       top: 15px;  
-       left: -50%;
-       transform: translateX(-50%);
-       color: white;
-       font-size: 14px;
-       opacity: 1;
-       transition: opacity 0.4s ease-in-out; 
-     }
-   
-     #dot4::after {
-       content: "Saint Mark's Basilica";
-       position: fixed;
-       top: 15px; 
-       left: -50%;
-       transform: translateX(-50%);
-       color: white;
-       font-size: 14px;
-       opacity: 1;
-       transition: opacity 0.4s ease-in-out;  
-     }
-   
-   
-   #dot2, #dot3, #dot4 {
-     position: absolute;
-     width: 40px;
-     height: 40px;
-     background-color: white;
-     border-radius: 50%;
-   
-     opacity: 0.5;
-     transition: opacity 1s ease-in-out 1s;  
-   }
-   
-   
-   #dot2 {
-     top: 24%;
-     left: 30%;
-     transform: translate(-50%, -50%);
-   }
-   
-   #dot3 {
-     top: 2%;
-     left: 60%;
-     transform: translate(-50%, -50%);
-   }
-   
-   #dot4 {
-     top: 25%;
-     left: 71%;
-     transform: translate(-50%, -50%);
-   }
-   
-   
-   #dot1::before {
-     content: "";
-     position: absolute;
-     top: -10vh;
-     left:16vh;
-     width: 56vw;
-     height: 48vh;
-     border: 2px dashed white;
-     border-radius: 100% / 100%;
-     border-left: none;
-     border-bottom: none;
-     transform: rotate(-30deg);
-     transform-origin: bottom left;
-     opacity: 0;  
-     transition: opacity 1s ease-in 1s;  
-   }
-   
-   
-   #dot1:hover {
-     transform: translate(-50%, -50%) scale(1.2);  
-   }
-   
-   #dot1:hover::after {
-     opacity: 1; 
-   }
-   
-   #dot2:hover::after {
-       opacity: 0.5; 
-     }
-   
-   #dot1:hover + #dot2 {
-     opacity: 0.5;  
-   }
-   
-   #dot1:hover + #dot2 + #dot3 {
-     opacity: 0.5; 
-   }
-   
-   #dot1:hover + #dot2 + #dot3 + #dot4 {
-     opacity: 0.5; 
-   }
-   
-   #dot1:hover::before {
-     opacity: 1; 
-   }
+/* Dot */
+#dot1 {
+    position: absolute;
+    top: 69%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;  
+    transition: transform 1s ease-in-out;  
+  }
+  
+  
+  #dot1::after {
+    content: "Ca' d'Oro";
+    position: absolute;
+    top: 15px;  
+    left: -40%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out; 
+  }
+  
+  
+  #dot2::after {
+      content: "Marciana Library";
+      position: absolute;
+      top: 15px; 
+      left: -70%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 12px;
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out;  
+    }
+  
+    #dot3::after {
+      content: "Doge's Palace";
+      position: absolute;
+      top: 15px;  
+      left: -30%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 12px;
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out; 
+    }
+  
+    #dot4::after {
+      content: "Saint Mark's Basilica";
+      position: fixed;
+      top: 15px; 
+      left: -30%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 12px;
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out;  
+    }
+  
+  
+  #dot2, #dot3, #dot4 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out 1s;  
+  }
+  
+  
+  #dot2 {
+    top: 24%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #dot3 {
+    top: 6%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #dot4 {
+    top: 25%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  #dot1::before {
+    content: "";
+    position: absolute;
+    top: -10vh;
+    left:16vh;
+    width: 54vw;
+    height: 46vh;
+    border: 2px dashed white;
+    border-radius: 100% / 100%;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(-30deg);
+    transform-origin: bottom left;
+    opacity: 0;  
+    transition: opacity 1s ease-in 1s;  
+  }
+  
+  
+  #dot1:hover {
+    transform: translate(-50%, -50%) scale(1.2);  
+  }
+  
+  #dot1:hover::after {
+    opacity: 1; 
+  }
+  
+  #dot2:hover::after {
+      opacity: 0.5; 
+    }
+  
+  #dot1:hover + #dot2 {
+    opacity: 0.5;  
+  }
+  
+  #dot1:hover + #dot2 + #dot3 {
+    opacity: 0.5; 
+  }
+  
+  #dot1:hover + #dot2 + #dot3 + #dot4 {
+    opacity: 0.5; 
+  }
+  
+  #dot1:hover::before {
+    opacity: 1; 
+  }
 
+  #dot1, #dot2, #dot3, #dot4 {
+    z-index: 10;
+  }
 /*--- Buildings Section---*/
 .buildings-section{
     padding: 3%;
