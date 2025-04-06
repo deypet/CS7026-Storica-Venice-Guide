@@ -943,6 +943,44 @@ body.keyboard-active .fact-btn {
   #dot1, #dot2, #dot3, #dot4 {
     z-index: 10;
   }
+
+@media (max-width: 768px) {
+    #dot2 {
+    top: 12%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #dot3 {
+    top: 6%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #dot4 {
+    top: 25%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #dot1::before {
+    content: "";
+    position: absolute;
+    top: -49vh;
+    left:15vw;
+    width: 70vw;
+    height: 98vw;
+    border: 2px dashed white;
+    border-radius: 100% / 100%;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(30deg);
+    transform-origin: top left;
+    opacity: 0;  
+    transition: opacity 1s ease-in 1s;  
+  }
+}
+
 /*--- Buildings Section---*/
 .buildings-section{
     padding: 3%;
