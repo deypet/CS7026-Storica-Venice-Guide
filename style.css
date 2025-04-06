@@ -532,6 +532,10 @@ p {
     opacity: 1;
 }
 
+/* Buttons always visible for keyboard navigation */
+body.keyboard-active .fact-btn {
+    opacity: 1;
+}
 
 /* Fact Button Styles */
 .fact-btn {
