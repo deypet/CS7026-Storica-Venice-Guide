@@ -779,6 +779,7 @@ body.keyboard-active .fact-btn {
     text-align: center;
     color: white;
     overflow: hidden;
+    background-color: black;
 }
 
 .hero-image {
