@@ -15,12 +15,12 @@
 }
 
 .skip-link:focus {
-    top: 10px; /* Bring it into view when focused */
+    top: 10px; /* Bring into view when focused */
 }
 
-/* Default focus style for keyboard navigation */
+/* Focus style for keyboard navigation */
 body.keyboard-active :focus {
-    outline: 3px solid #0066cc;/* Visible green focus for keyboard users */
+    outline: 3px solid #0066cc;
     outline-offset: 3px;
 }
 
@@ -111,15 +111,15 @@ p {
 
 /* --- Navigation Top Bar ----------------- */
 .top-nav {
-    position: fixed; /* Makes it stick to the top */
+    position: fixed; 
     top: 20px;
-    left: 30px; /* Space from the left */
-    right: 30px; /* Space from the right */
+    left: 30px; 
+    right: 30px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100; /* Ensures it's above other content */
-    transition: transform 0.3s ease-in-out; /* Smooth hide/show effect */
+    transition: transform 0.3s ease-in-out;
 }
   
 .hamburger {
@@ -129,6 +129,7 @@ p {
     color: #000000;
     display: block;
     line-height: 1;
+    border-width: 0;
     background-color: transparent;
 }
 
@@ -143,7 +144,7 @@ p {
 
 .white-nav .hamburger,
 .white-nav .logo {
-    color: #ffffff !important; /* Forces white color */
+    color: #ffffff !important; /* White colour for the index/home page */
 }
 
 /* --- Back Top Button ----------------- */
@@ -297,7 +298,6 @@ p {
     background-color: #A88B5D;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .intro {
         flex-direction: column;
@@ -326,7 +326,6 @@ p {
     min-height: 100vh;
 }
 
-/* Left Image */
 .story-image {
     width: 50%;
     min-height: 100%;
@@ -338,7 +337,6 @@ p {
     object-fit: cover; 
 }
 
-/* Right Content */
 .story-content {
     width: 50%;
     background-color: #A28351; 
@@ -349,8 +347,6 @@ p {
     padding: 7%;
 }
 
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .story {
         flex-direction: column;
@@ -377,7 +373,6 @@ p {
     flex-direction: row-reverse; 
 }
 
-/* Left Content */
 .characters-content {
     width: 50%;
     background-color: #A28351;
@@ -388,7 +383,6 @@ p {
     padding: 7%;
 }
 
-/* Right Image */
 .characters-image {
     width: 50%;
     min-height: 100%;
@@ -400,7 +394,6 @@ p {
     object-fit: cover;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .characters {
         flex-direction: column;
@@ -462,7 +455,6 @@ p {
     color: white;
 }
 
-
 .fact-image {
     width: 45%;
     display: flex;
@@ -511,12 +503,12 @@ p {
     }
 
     .swipe-indicator {
-        display: block; /* Show only on mobile */
+        display: block;
     }
 }
 
 
-/*  Navigation Buttons */ 
+/*  Fact Navigation Buttons */ 
 .fact-btn-wrapper {
     position: absolute;
     width: 20%; 
@@ -541,7 +533,7 @@ p {
 }
 
 
-/* Button Styles */
+/* Fact Button Styles */
 .fact-btn {
     background: #A28351;;
     color: white;
@@ -554,7 +546,7 @@ p {
     border-radius: 40px;
 }
 
-/* Info Floor Area Guide Section */
+/*------------- Info Floor Area Guide Section -------------------*/
 .info-section {
     display: flex;
     align-items: center;
@@ -612,7 +604,7 @@ p {
 
 }
 
-/*  Food Section */
+/*-----------  Food Section -------------*/
 .food-section {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -663,7 +655,7 @@ p {
   }
 
 
-  /* Booking Section */
+  /*-------------- Booking Section -----------------*/
   .booking-section {
     background-color: #a64e40;
     color: white;
@@ -690,7 +682,7 @@ p {
     color: white;
   }
   
-  /* Footer */
+  /*-------------- Footer --------------*/
   footer {
     padding: 40px 20px;
     background-color: #2c2c2c;
@@ -746,7 +738,7 @@ p {
 
 }
 
-/*--- Zoom Image Modal ---*/
+/*------------- Zoom Image Modal ----------------*/
 .image-modal {
     display: none;
     position: fixed;
@@ -802,7 +794,7 @@ p {
 }
 
 
-/* Dot */
+/*--- Dots ---*/
 #dot1 {
     position: absolute;
     top: 69%;
@@ -991,7 +983,6 @@ p {
 
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
 
     .buildings-section{
@@ -999,8 +990,8 @@ p {
     }
 
     .cards-container {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center the cards */
+        flex-direction: column;
+        align-items: center;
     }
 }
 
