@@ -8,14 +8,14 @@
     position: absolute;
     top: -50px;
     left: 10px;
-    background: #000;
+    background: red;
     color: #FFFFFF;
     padding: 10px;
     z-index: 100;
 }
 
 .skip-link:focus {
-    top: 10px; /* Bring into view when focused */
+    top: 30px; /* Bring into view when focused */
 }
 
 /* Focus style for keyboard navigation */
