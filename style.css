@@ -1045,18 +1045,12 @@ body.keyboard-active .fact-btn {
 
 /*--- Video Section ---*/
 .video-section {
+    display: none;
     text-align: center;
-    margin-top: 40px;
     padding: 20px;
     background-color: #f4f1ea;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.video-section h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
 }
 
 .building-video {
@@ -1064,4 +1058,10 @@ body.keyboard-active .fact-btn {
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .video-section {
+    display: block;
+  }
 }
